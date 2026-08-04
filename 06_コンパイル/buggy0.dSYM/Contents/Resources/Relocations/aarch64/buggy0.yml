@@ -1,0 +1,5 @@
+---
+triple:          'arm64-apple-darwin'
+binary-path:     "/Users/yamauchikento/49_CS_C言語/06_コンパイル/buggy0"
+relocations:     []
+...
