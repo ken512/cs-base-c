@@ -1,0 +1,24 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "現在のCファイルをビルド",
+      "type": "process",
+      "command": "/usr/bin/clang",
+      "args": [
+        "-g",
+        "${file}",
+        "-I/opt/homebrew/include",
+        "-L/opt/homebrew/lib",
+        "-o",
+        "${fileDirname}/${fileBasenameNoExtension}",
+        "-lcs50"
+      ],
+      "problemMatcher": ["$gcc"],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      }
+    }
+  ]
+}
